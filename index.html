@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Temperature Calculator</title>
+    <!-- Custom css file link -->
+    <link rel="stylesheet" href="./assets/style.css">
+    <!-- Boxicon cdn -->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>   
+    <nav class="nav container">
+        <h1 class="brand">Temcal</h1>
+        <a href="https://github.com/robiuzzaman4/temcal" class="icon"><i class="bx bxl-github"></i></a>
+    </nav>
+    <section class="hero container">
+        <div class="hero-content">
+            <h3 class="title">Temperature Converter</h3>
+            <form action="" class="form">
+                <label for="celciusInput">
+                    <p>Celcius - °C</p>
+                    <input type="text" name="celcius" id="celciusInput" class="celciusInput" placeholder="37.22°C">
+                </label>
+                <label for="fahrenheitInput">
+                    <p>Fahrenheit - °F</p>
+                    <input type="text" name="fahrenheit" id="fahrenheitInput" class="fahrenheitInput" placeholder="99°F">
+                </label>
+                <label for="reset">
+                    <p>Reset</p>
+                    <button type="reset" class="btn" id="reset"><i class='bx bx-reset'></i></button>
+                </label>
+            </form>
+        </div>
+    </section>
+    <!-- Js file link -->
+    <script src="./assets/script.js"></script>
+</body>
+</html>

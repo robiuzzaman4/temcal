@@ -1,0 +1,133 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;500;600;700&display=swap');
+:root {
+    --base: #0F1014;
+    --interface: #111216;
+    --overlay: #131317;
+    --text: #c8c8d3;
+    --slight: #a1a2ac;
+    --soft: #43444D;
+    --blue: #8eb6f5;
+    --indigo: #c58fff;
+}
+/* Base */
+*, *::before, *::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+::selection {
+    background-color: var(--blue);
+    color: var(--base);
+}
+body {
+    min-height: 100vh;
+    width: 100%;
+    background-color: var(--base);
+    color: var(--text);
+    font-family: 'Nunito', sans-serif;
+}
+/* Reuseable classes */
+h1, .icon {
+    font-size: 1.6em;
+    font-weight: 600;
+    color: var(--text);
+}
+h3 {
+    font-size: 1.3em;
+    font-weight: 500;
+    color: var(--slight);
+}
+p {
+    font-size: .95em;
+    font-weight: 300;
+    color: var(--slight);
+}
+.container {
+    width: 100%;
+    max-width: 1140px;
+    margin-inline: auto;
+    padding: 2em;
+}
+/* Nav section start */
+.nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+/* Nav section end */
+/* Hero section start */
+.hero-content {
+    background-color: var(--interface);
+    width: 100%;
+    height: 18em;
+    border-radius: 1em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+.hero-content > .title {
+    text-align: center;
+}
+.hero-content .form {
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    justify-content: center;
+    gap: 1em;
+}
+.hero-content > .form > label > input[type="text"] {
+    background-color: var(--base);
+    border: .1em solid var(--soft);
+    border-radius: .5em;
+    outline: none;
+    padding: .5em;
+    padding-left: 1em;
+    color: var(--blue);
+}
+.hero-content > .form > label > .btn {
+    background-color: var(--base);
+    border: .1em solid var(--soft);
+    border-radius: .5em;
+    outline: none;
+    padding: .5em;
+    color: var(--text);
+}
+/* Hero section end */
+
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) { 
+    .container {
+        max-width: 540px;
+    }
+}
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) { 
+    .container {
+        max-width: 720px;
+    }
+    h1, .icon {
+        font-size: 2em;
+    }
+    h3 {
+        font-size: 1.6em;
+    }
+    p {
+        font-size: 1em;
+    }
+}
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) { 
+    .container {
+        max-width: 960px;
+    }
+    .hero-content > .form {
+        flex-direction: row;
+    }
+    .hero-content > .form > label > input[type="text"] {
+        padding: .8em 1.5em;
+    }
+    .hero-content > .form > label > .btn {
+        padding: .8em;
+    }
+}
